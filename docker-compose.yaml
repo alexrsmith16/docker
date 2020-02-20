@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    container_name: "nodeapp"
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NAME=alex_smith
+  node:
+    image: "node:current-alpine"
